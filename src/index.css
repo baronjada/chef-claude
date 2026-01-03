@@ -35,8 +35,9 @@ main {
 }
 
 .add-ingredient-form {
-  width: 100%;
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 12px;
 }
 
@@ -44,8 +45,11 @@ main {
   padding: 8px 12px;
   border-radius: 6px;
   border: 1px solid #d1d5db;
-  width: 100%;
   color: #141413;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+  flex-grow: 1;
+  min-width: 150px;
+  max-width: 400px;
 }
 
 .add-ingredient-form button[type="submit"] {
@@ -58,6 +62,7 @@ main {
   white-space: nowrap;
   transition: 200ms ease-in-out;
   cursor: pointer;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
 }
 
 .add-ingredient-form button[type="submit"]::before {
