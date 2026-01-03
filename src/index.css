@@ -30,21 +30,17 @@ body {
   background-color: #fafaf8;
 }
 
-.form-container {
-  padding: 0 64px;
+main {
+  padding: 70px 64px;
 }
 
-form {
-  margin: 70px 0 48px;
+.add-ingredient-form {
   width: 100%;
-}
-
-.input-and-button {
   display: flex;
   gap: 12px;
 }
 
-input[type="text"] {
+.add-ingredient-form input[type="text"] {
   padding: 8px 12px;
   border-radius: 6px;
   border: 1px solid #d1d5db;
@@ -52,7 +48,7 @@ input[type="text"] {
   color: #141413;
 }
 
-button[type="submit"] {
+.add-ingredient-form button[type="submit"] {
   background-color: #141413;
   color: white;
   padding: 8px 24px;
@@ -64,7 +60,11 @@ button[type="submit"] {
   cursor: pointer;
 }
 
-button[type="submit"]:hover {
+.add-ingredient-form button[type="submit"]::before {
+  content: "+ ";
+}
+
+.add-ingredient-form button[type="submit"]:hover {
   background-color: #fafaf8;
   color: #141413;
   border: 1px solid #141413;
